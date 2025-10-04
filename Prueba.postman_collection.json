@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "3e2b7467-f3cb-4247-ae5c-96870834c1a8",
+		"name": "Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47472396",
+		"_collection_link": "https://ricardo1791-6668721.postman.co/workspace/Ricardo's-Workspace~e1717151-c74a-4397-896e-e2a669e1eb38/collection/47472396-3e2b7467-f3cb-4247-ae5c-96870834c1a8?action=share&source=collection_link&creator=47472396"
+	},
+	"item": [
+		{
+			"name": "GetDocumentTypes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/DocumentType",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"DocumentType"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRegions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Region",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Region"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProvinces",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Province/01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Province",
+						"01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUbigeo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Ubigeo/0101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Ubigeo",
+						"0101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetLibeyUsers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/LibeyUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"LibeyUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertLibeyUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"documentNumber\": \"47236059\",\r\n    \"documentTypeId\": 1,\r\n    \"name\": \"Ricardo\",\r\n    \"fathersLastName\": \"Alvarez\",\r\n    \"mothersLastName\": \"Ingar\",\r\n    \"address\": \"AV LIMA 3425\",\r\n    \"ubigeoCode\": \"010101\",\r\n    \"phone\": \"989765234\",\r\n    \"email\": \"ralvarez@test.com\",\r\n    \"password\": \"pwd1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/LibeyUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"LibeyUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateLibeyUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"documentNumber\": \"47236059\",\r\n    \"documentTypeId\": 1,\r\n    \"name\": \"Ricardo\",\r\n    \"fathersLastName\": \"Alvarez\",\r\n    \"mothersLastName\": \"Ingar\",\r\n    \"address\": \"AV LIMA 3425 UPD\",\r\n    \"ubigeoCode\": \"010101\",\r\n    \"phone\": \"989765234\",\r\n    \"email\": \"ralvarez@test.com\",\r\n    \"password\": \"pwd1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/LibeyUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"LibeyUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteLibeyUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"documentNumber\": \"47236059\",\r\n    \"documentTypeId\": 1,\r\n    \"name\": \"Ricardo\",\r\n    \"fathersLastName\": \"Alvarez\",\r\n    \"mothersLastName\": \"Ingar\",\r\n    \"address\": \"AV LIMA 3425 UPD\",\r\n    \"ubigeoCode\": \"010101\",\r\n    \"phone\": \"989765234\",\r\n    \"email\": \"ralvarez@test.com\",\r\n    \"password\": \"pwd1234\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/LibeyUser/47236059",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"LibeyUser",
+						"47236059"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
